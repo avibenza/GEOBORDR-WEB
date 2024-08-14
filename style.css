@@ -1,0 +1,68 @@
+:root {
+    /* Custom properties for easy adjustment */
+    --logo-width: 12%; /* Adjust logo width */
+    --logo-height: auto; /* Adjust logo height, auto maintains aspect ratio */
+    --logo-top: 0; /* Adjust vertical positioning */
+
+    --title-map-width: 25%; /* Adjust width */
+    --title-map-height: auto; /* Adjust height, auto maintains aspect ratio */
+    --title-map-top: -15px; /* Reduced spacing below the logo */
+
+    --play-button-top: -15px; /* Reduced spacing below the title map image */
+
+    --border-image-width: 20%; /* Adjust width of the border image */
+    --border-image-height: auto; /* Adjust height of the border image */
+    --border-image-top: -20px; /* Adjust vertical positioning of the border image (move up) */
+    --border-image-border: 3px solid black; /* Border style for the border image */
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(51, 129, 228);
+}
+
+#title-container {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo {
+    width: var(--logo-width);
+    height: var(--logo-height);
+    margin-top: var(--logo-top);
+}
+
+#title-map {
+    width: var(--title-map-width);
+    height: var(--title-map-height);
+    margin-top: var(--title-map-top);
+}
+
+#play-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #6dbf4e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: var(--play-button-top);
+}
+
+#play-button:hover {
+    background-color: #5aa53f;
+}
+
+#border-image {
+    width: var(--border-image-width);
+    height: var(--border-image-height);
+    margin-top: var(--border-image-top);
+    border: var(--border-image-border); /* Apply the border to the image */
+}
